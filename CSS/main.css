@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Cormorant Upright", serif;
+}
+
+/* Navigation Section */
+
+.heroPage {
+  height: 100vh;
+  background-color: black;
+}
+nav {
+  width: 100%;
+  height: 80px;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-line {
+  object-fit: cover;
+  height: 8%;
+}
+
+nav .reg-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+/* Hero Section */
+
+.heroCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 190px 180px;
+}
+
+.heroImg {
+  width: 450px;
+  height: 550px;
+  position: relative;
+}
+.heroImg img {
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  top: -10px;
+  object-fit: cover;
+}
+
+.heroItems {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 450px;
+  gap: 20px;
+}
+.heroTitle {
+  font-size: 1.5rem;
+}
+.heroItems p {
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  color: #aaa;
+}
+.heroItems img {
+  width: 40px;
+}
+.heroItems h1 {
+  font-size: 5rem;
+  color: #dcca87;
+}
+.heroItems button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #dcca87;
+}
+.boxTop {
+  background-color: #dcca87;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -30px;
+  right: -20px;
+}
+.boxBottom {
+  background-color: #dcca87;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -20px;
+  bottom: -10px;
+}
+
+/* About Section */
+.aboutSection {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #040404;
+  gap: 300px;
+}
+
+.aboutCont {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 400px;
+  gap: 20px;
+}
+.aboutCont.history {
+  text-align: left;
+}
+
+.spoon {
+  width: 40px;
+}
+.aboutCont h2 {
+  font-size: 3rem;
+  color: #dcca87;
+}
+.aboutCont p {
+  line-height: 25px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #aaa;
+}
+.aboutBtn {
+  align-self: flex-end;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #dcca87;
+}
+.aboutCont button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #dcca87;
+}
+.knife {
+  position: absolute;
+}
+.knifeCont {
+  width: 60px;
+  position: absolute;
+  top: -40px;
+  left: 170px;
+}
+/* For the menu section for drinks */
+.menu {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  gap: 30px;
+}
+.menu button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #dcca87;
+}
+.fits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.fits h5 {
+  font-size: 1.5rem;
+}
+.fits h2 {
+  word-spacing: 10px;
+  font-size: 4rem;
+  color: #dcca87;
+}
+.drinkMenu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.menuDrinks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.menuDrinks h3 {
+  font-size: 2rem;
+}
+.listDrinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.beer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7px;
+}
+.beer h5 {
+  align-self: self-start;
+  font-weight: lighter;
+}
+.beerPara {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.beerPara h4 {
+  color: #dcca87;
+}
+.hl {
+  width: 80px;
+  height: 0;
+  border: 1px solid #fff;
+}
+.wine {
+  position: absolute;
+  width: 220px;
+  top: 0;
+  left: 270px;
+}
+/* Chefs section */
+.chefsWord {
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 80px 180px;
+  background-color: #000;
+}
+.chefPara {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 450px;
+  gap: 20px;
+}
+.chefPara h5 {
+  font-size: 1.5rem;
+}
+.chefPara h3 {
+  font-size: 3.6rem;
+  color: #dcca87;
+}
+.chefPara h4 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #dcca87;
+}
+.chefPara p {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.quote {
+  width: 30px;
+}
+.sign {
+  margin-top: 20px;
+  width: 140px;
+}
+
+.chefImg {
+  width: 450px;
+  height: 550px;
+  position: relative;
+}
+.chefImg img {
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  top: -10px;
+  object-fit: cover;
+}
+.cTop {
+  background-color: #dcca87;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -30px;
+  right: -20px;
+}
+.cBottom {
+  background-color: #dcca87;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -20px;
+  bottom: -10px;
+}
+/* Restaurant Video */
+.resVid {
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../Assets/Images/res.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Award section */
+.award {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 80px 150px;
+  background-color: black;
+  color: #fff;
+}
+.award h3 {
+  font-size: 4.3rem;
+  margin-bottom: 30px;
+  color: #dcca87;
+}
+
+.awardPara {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 750px;
+}
+
+.laurelItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+}
+.lauCont {
+  display: flex;
+  gap: 20px;
+}
+.lPara {
+  width: 180px;
+}
+.lPara h5 {
+  font-size: 1.5rem;
+  color: #dcca87;
+}
+.lPara p {
+  font-size: 1rem;
+  color: #aaa;
+}
+/* For the fruit section */
+.fruit {
+  position: absolute;
+  top: 70px;
+  right: 200px;
+}
+.food {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  right: 40px;
+}
+.g {
+  width: 300px;
+  position: absolute;
+  top: 250px;
+  right: 180px;
+}
+
+/* Instagram Image Section */
+.social {
+  height: 500px;
+  background-color: black;
+}

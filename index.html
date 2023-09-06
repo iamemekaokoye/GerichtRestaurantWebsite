@@ -5,31 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/main.css" />
     <link rel="stylesheet" href="./CSS/header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
     <title>Gericht Restaurant</title>
   </head>
   <body>
-    <header>
+    <div class="heroPage">
+      <!-- nav section -->
       <nav>
         <img src="./Assets/Images/Gerícht_white.svg" alt="" />
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Pages</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Landing</a></li>
-        <li><a href="">Log-in/Registration</a></li>
-        <li><a href="">Book-Table</a></li>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Landing</a></li>
+        </ul>
+
+        <ul class="reg-line">
+          <li><a href="">Log-in/Registration</a></li>
+          <img class="hero-line" src="./Assets/Images/Line2.svg" alt="line" />
+          <li><a href="">Book-Table</a></li>
+        </ul>
       </nav>
-    </header>
 
-    <main>
       <!-- Hero Section -->
-      <div>
-        <div>
-          <img src="./Assets/Images/Hero_Image1.png" alt="munchy-food" />
-        </div>
+      <div class="heroCont">
+        <div class="heroItems">
+          <div>
+            <p class="heroTitle">chase the new flavour</p>
+            <img
+              class="right-spoon"
+              src="./Assets/Images/spoon_right.svg"
+              alt="spoon right"
+            />
+          </div>
 
-        <div>
-          <p>chase the new flavour</p>
           <h1>
             The Key To <br />
             Fine Dining
@@ -41,213 +57,325 @@
           </p>
           <button>Explore Menu</button>
         </div>
+        <div class="heroImg">
+          <div class="boxTop"></div>
+          <div class="boxBottom"></div>
+          <img src="./Assets/Images/Hero_Image1.png" alt="munchy-food" />
+        </div>
 
-        <div class="hero-tag">
+        <div style="display: none" class="hero-tag">
           <p>#Bar</p>
           <p>#Gericht'</p>
           <p>scroll</p>
         </div>
       </div>
+    </div>
+    <!-- About Section -->
+    <div class="aboutSection">
+      <div class="knife">
+        <img
+          class="knifeCont"
+          src="./Assets/Images/savernake-knives.png"
+          alt="savernake knife"
+        />
+        <img
+          class="G"
+          src="./Assets/Images/G_gray.png"
+          alt="Gericht Big-G icon"
+        />
+      </div>
 
-      <!-- About Section -->
-      <div class="About-Section">
-        <div>
-          <img
-            src="./Assets/Images/savernake-knives.png"
-            alt="savernake knife"
-          />
-          <img src="./Assets/Images/G_gray.png" alt="Gericht Big-G icon" />
-        </div>
-
+      <div class="aboutCont">
         <div>
           <h2>About Us</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit veniam, odit porro quidem sapiente optio, in molestias
-            illum atque explicabo cum iure.
-          </p>
-          <button>Know More</button>
-        </div>
-
-        <div>
-          <h2>Our History</h2>
-          <p>
-            Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.
-            Risus placerat morbi volutpat habitasse interdum mi aliquam In sed
-            odio nec aliquet..
-          </p>
-          <button>Know More</button>
-        </div>
-      </div>
-
-      <!-- Menu Section for Drinks -->
-
-      <div>
-        <div>
-          <h5>Menu That Fits Your Palette</h5>
-          <h2>Today's Special</h2>
-        </div>
-      </div>
-      <div class="Menu-drinks">
-        <h3>Wines & Beer</h3>
-        <div>
-          <div>
-            <h5>Chapel Hills Shiraz <br /><span>AU | Bottle </span></h5>
-            <h5>$56</h5>
-          </div>
-          <div>
-            <h5>Catena Malbec <br /><span>AR | Bottle </span></h5>
-            <h5>$59</h5>
-          </div>
-          <div>
-            <h5>La Vieille Rosé <br /><span>FR | 750 ml </span></h5>
-            <h5>$44</h5>
-          </div>
-          <div>
-            <h5>Rhino Pale Ale <br /><span>CA | 750 ml </span></h5>
-            <h5>$31</h5>
-          </div>
-          <div>
-            <h5>Irish Guinness <br /><span>IE | 750 ml </span></h5>
-            <h5>$26</h5>
-          </div>
-        </div>
-      </div>
-
-      <img src="./Assets/Images/Menu_Palette.png" alt="Assorted drinks" />
-
-      <div class="Menu-drinks">
-        <h3>Cocktails</h3>
-        <div>
-          <div>
-            <h5>
-              Aperol Spritz <br /><span
-                >Aperol | Villa Marchesi prosecco | soda | 30ml
-              </span>
-            </h5>
-            <h5>$20</h5>
-          </div>
-          <div>
-            <h5>
-              Dark 'N' Stormy <br /><span
-                >Dark rum | Ginger beer | Slice of lime.
-              </span>
-            </h5>
-            <h5>$16</h5>
-          </div>
-          <div>
-            <h5>Daiquiri <br /><span>Rum | Citrus juice | Sugar </span></h5>
-            <h5>$10</h5>
-          </div>
-          <div>
-            <h5>
-              Old Fashioned <br /><span
-                >Bourbon | Brown sugar | Angostura Bitters
-              </span>
-            </h5>
-            <h5>$31</h5>
-          </div>
-          <div>
-            <h5>
-              Negroni <br /><span
-                >Gin | Sweet Vermouth | Campari | Orange garnish
-              </span>
-            </h5>
-            <h5>$26</h5>
-          </div>
-        </div>
-      </div>
-
-      <button>View More</button>
-
-      <!-- Chefs Statement Section -->
-
-      <div class="chefs-word">
-        <div>
-          <img src="./Assets/Images/Chef Xim.png" alt="Chef Xim Images" />
-          <h5>Chef's Word</h5>
-          <h3>What We Believe In</h3>
-          <img src="./Assets/Images/quote svg.svg" alt="quote" />
-          <p>
-            auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget
-            sit. Nulla scelerisque scelerisque congue ac consequat, aliquam
-            molestie lectus eu. Congue iaculis integer curabitur semper sit
-            nunc.
-          </p>
-          <h4>Kevin Luo</h4>
-          <p>Chef & Founder</p>
           <img
-            src="./Assets/Images/Kevin_Luo_Signature .svg"
-            alt="Chefs Signature"
+            class="left-spoon"
+            src="./Assets/Images/spoon_left.svg"
+            alt="spoon left"
           />
         </div>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          veniam, odit porro quidem sapiente optio, in molestias illum atque
+          explicabo cum iure.
+        </p>
+        <button class="aboutBtn">Know More</button>
       </div>
 
-      <!-- Restaurant Video -->
-      <div>
-        <video src="#"></video>
-        <img src="./Assets/Images/Play_Button.svg" alt="" />
-      </div>
+      <div class="aboutCont history">
+        <div>
+          <h2>Our History</h2>
+          <img
+            class="spoon"
+            class="right-spoon"
+            src="./Assets/Images/spoon_right.svg"
+            alt="spoon right"
+          />
+        </div>
 
-      <!-- Award Section -->
-      <div>
-        <img src="./Assets/Images/Award_Img.png" alt="Award Circle Image" />
-        <h5>Awards and Recognition</h5>
-        <h3>Our Laurels</h3>
-        <div class="laurel-items">
-          <div>
-            <img src="./Assets/Images/number1.svg" alt="1st award" />
-            <h5>Rising Star</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-          <div>
-            <img src="./Assets/Images/number2.svg" alt="2nd award" />
-            <h5>Bib Gourmond</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-          <div>
-            <img src="./Assets/Images/number3.svg" alt="3rd award" />
-            <h5>Outstanding Chef</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-          <div>
-            <img src="./Assets/Images/number5.svg" alt="5th award" />
-            <h5>AA Hospitality</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        <p>
+          Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat.
+          Risus placerat morbi volutpat habitasse interdum mi aliquam In sed
+          odio nec aliquet..
+        </p>
+        <button>Know More</button>
+      </div>
+    </div>
+    <!-- Menu Section for Drinks -->
+    <div class="menu">
+      <div class="fits">
+        <div>
+          <h5>Menu That Fits Your Palette</h5>
+          <img
+            class="right-spoon"
+            src="./Assets/Images/spoon_right.svg"
+            alt="spoon right"
+          />
+        </div>
+        <h2>Today's Special</h2>
+      </div>
+      <div class="drinkMenu">
+        <div class="menuDrinks">
+          <h3>Wines & Beer</h3>
+          <div class="listDrinks">
+            <div class="beer">
+              <div class="beerPara">
+                <h4>Chapel Hill Shiraz</h4>
+                <div class="hl"></div>
+                <p>$56</p>
+              </div>
+              <h5>AU | Bottle</h5>
+            </div>
+            <div class="beer">
+              <div class="beerPara">
+                <h4>Catena Malbec</h4>
+                <div class="hl"></div>
+                <p>$56</p>
+              </div>
+              <h5>AR | Bottle</h5>
+            </div>
+            <div class="beer">
+              <div class="beerPara">
+                <h4>La Vieille Rosé</h4>
+                <div class="hl"></div>
+                <p>$56</p>
+              </div>
+              <h5>FR | 750 ml</h5>
+            </div>
+            <div class="beer">
+              <div class="beerPara">
+                <h4>Rhino Pale Ale</h4>
+                <div class="hl"></div>
+                <p>$56</p>
+              </div>
+              <h5>CA | 750 ml</h5>
+            </div>
+            <div class="beer">
+              <div class="beerPara">
+                <h4>Irish Guinness</h4>
+                <div class="hl"></div>
+                <p>$56</p>
+              </div>
+              <h5>IE | 750 ml</h5>
+            </div>
           </div>
         </div>
 
         <img
+          class="wine"
+          src="./Assets/Images/Menu_Palette.png"
+          alt="Assorted drinks"
+        />
+
+        <div class="menuDrinks">
+          <h3>Cocktails</h3>
+          <div class="listDrinks">
+            <div class="beer">
+              <div class="beerPara">
+                <h4>Aperol Spritz</h4>
+                <div class="hl"></div>
+                <p>$56</p>
+              </div>
+              <h5>Aperol | Villa Marchesi prosecco | soda | 30ml</h5>
+            </div>
+            <div class="beer">
+              <div class="beerPara">
+                <h4>Dark 'N' Stormy</h4>
+                <div class="hl"></div>
+                <p>$56</p>
+              </div>
+              <h5>Dark rum | Ginger beer | Slice of lime.</h5>
+            </div>
+            <div class="beer">
+              <div class="beerPara">
+                <h4>Daiquiri</h4>
+                <div class="hl"></div>
+                <p>$56</p>
+              </div>
+              <h5>Rum | Citrus juice | Sugar</h5>
+            </div>
+            <div class="beer">
+              <div class="beerPara">
+                <h4>Old Fashioned</h4>
+                <div class="hl"></div>
+                <p>$56</p>
+              </div>
+              <h5>Bourbon | Brown sugar | Angostura Bitters</h5>
+            </div>
+            <div class="beer">
+              <div class="beerPara">
+                <h4>Negroni</h4>
+                <div class="hl"></div>
+                <p>$56</p>
+              </div>
+              <h5>Gin | Sweet Vermouth | Campari | Orange garnish</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>View More</button>
+    </div>
+    <!-- Chefs Statement Section -->
+
+    <div class="chefsWord">
+      <div class="chefImg">
+        <div class="cTop"></div>
+        <div class="cBottom"></div>
+        <img src="./Assets/Images/Chef Xim.png" alt="Chef Xim Images" />
+      </div>
+      <div class="chefPara">
+        <div>
+          <h5>Chef's Word</h5>
+          <img
+            class="spoon"
+            class="right-spoon"
+            src="./Assets/Images/spoon_right.svg"
+            alt="spoon right"
+          />
+        </div>
+
+        <h3>What We Believe In</h3>
+
+        <p>
+          <img class="quote" src="./Assets/Images/quote svg.svg" alt="quote" />
+          auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+          Nulla scelerisque scelerisque congue ac consequat, aliquam molestie
+          lectus eu. Congue iaculis integer curabitur semper sit nunc.
+        </p>
+        <div>
+          <h4>Kevin Luo</h4>
+          <p>Chef & Founder</p>
+        </div>
+
+        <img
+          class="sign"
+          src="./Assets/Images/Kevin_Luo_Signature .svg"
+          alt="Chefs Signature"
+        />
+      </div>
+    </div>
+    <!-- Restaurant Video -->
+    <div class="resVid">
+      <img src="./Assets/Images/Play_Button.svg" alt="" />
+    </div>
+    <!-- Award Section -->
+    <div class="award">
+      <img
+        style="display: none"
+        src="./Assets/Images/Award_Img.png"
+        alt="Award Circle Image"
+      />
+      <div class="awardPara">
+        <div>
+          <h5>Awards and Recognition</h5>
+          <img
+            class="spoon"
+            src="./Assets/Images/spoon_right.svg"
+            alt="spoon right"
+          />
+        </div>
+
+        <h3>Our Laurels</h3>
+
+        <div class="laurelItems">
+          <div class="lauCont">
+            <img src="./Assets/Images/number1.svg" alt="1st award" />
+            <div class="lPara">
+              <h5>Rising Star</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </div>
+          <div class="lauCont">
+            <img src="./Assets/Images/number2.svg" alt="2nd award" />
+            <div class="lPara">
+              <h5>Bib Gourmond</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </div>
+          <div class="lauCont">
+            <img src="./Assets/Images/number3.svg" alt="3rd award" />
+            <div class="lPara">
+              <h5>Outstanding Chef</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </div>
+          <div class="lauCont">
+            <img src="./Assets/Images/number5.svg" alt="5th award" />
+            <div class="lPara">
+              <h5>AA Hospitality</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fruit">
+        <img
+          class="food"
           src="./Assets/Images/Awards Food Image.svg"
           alt="Award food image"
         />
-        <img src="./Assets/Images/G_white.svg" alt="Gericht G" />
+        <img class="g" src="./Assets/Images/G_white.svg" alt="Gericht G" />
       </div>
+    </div>
 
-      <!-- Instagram Image Section -->
-      <div>
-        <div class="IG-writeup">
-          <h5>Instagram</h5>
-          <h3>Photo Gallery</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
-            mattis ipsum turpis elit elit scelerisque egestas mu.
-          </p>
-          <button>View More</button>
-        </div>
-        <div class="IG-Photos">
-          <img src="./Assets/Images/IG_img1.svg" alt="IG Images" />
-          <img src="./Assets/Images/IG_Img2.png" alt="IG Images" />
-          <img src="./Assets/Images/IG_icon.svg" alt="Ig icon" />
-          <img src="./Assets/Images/IG_Img3.svg" alt="IG Images" />
-          <img src="./Assets/Images/IG_Img4.svg" alt="IG Images" />
-        </div>
+    <!-- Instagram Image Section -->
+    <div class="social">
+      <div class="IG-writeup">
+        <h5>Instagram</h5>
+        <img
+          class="right-spoon"
+          src="./Assets/Images/spoon_right.svg"
+          alt="spoon right"
+        />
+
+        <h3>Photo Gallery</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+          mattis ipsum turpis elit elit scelerisque egestas mu.
+        </p>
+        <button>View More</button>
       </div>
+      <div class="IG-Photos">
+        <img src="./Assets/Images/IG_img1.svg" alt="IG Images" />
+        <img src="./Assets/Images/IG_Img2.png" alt="IG Images" />
+        <img src="./Assets/Images/IG_icon.svg" alt="Ig icon" />
+        <img src="./Assets/Images/IG_Img3.svg" alt="IG Images" />
+        <img src="./Assets/Images/IG_Img4.svg" alt="IG Images" />
+      </div>
+    </div>
 
+    <main>
       <!-- Contact Us Section -->
       <div class="contact-section">
         <div>
           <h5>Contact</h5>
+          <img
+            class="right-spoon"
+            src="./Assets/Images/spoon_right.svg"
+            alt="spoon right"
+          />
+
           <h3>Find Us</h3>
           <p>Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
 
@@ -270,6 +398,12 @@
       <!-- Newsletter -->
       <div class="newsletter">
         <h5>Newsletter</h5>
+        <img
+          class="right-spoon"
+          src="./Assets/Images/spoon_right.svg"
+          alt="spoon right"
+        />
+
         <h3>Subscribe To Our Newsletter</h3>
         <p>...and never miss latest updates</p>
       </div>
@@ -300,7 +434,11 @@
                 "The best way to find yourself is to lose yourself in the
                 service of others.”
               </p>
-              <img src="./Assets/Images/spoon_right.svg" alt="spoon right" />
+              <img
+                class="right-spoon"
+                src="./Assets/Images/spoon_right.svg"
+                alt="spoon right"
+              />
               <div>
                 <img
                   src="./Assets/Images/u_facebook-f(1).svg"
@@ -332,7 +470,7 @@
 
         <!-- for bottom -->
         <div class="F-Bottom">
-          <p>2021 Gerícht. @Oregon Agency. All Rights reserved.</p>
+          <p>2022 Gerícht. @Oregon Agency. All Rights reserved.</p>
         </div>
       </div>
     </footer>
