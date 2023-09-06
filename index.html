@@ -341,13 +341,15 @@
 
     <!-- Instagram Image Section -->
     <div class="social">
-      <div class="IG-writeup">
-        <h5>Instagram</h5>
-        <img
-          class="right-spoon"
-          src="./Assets/Images/spoon_right.svg"
-          alt="spoon right"
-        />
+      <div class="igWriteup">
+        <div>
+          <h5>Instagram</h5>
+          <img
+            class="right-spoon"
+            src="./Assets/Images/spoon_right.svg"
+            alt="spoon right"
+          />
+        </div>
 
         <h3>Photo Gallery</h3>
         <p>
@@ -356,18 +358,22 @@
         </p>
         <button>View More</button>
       </div>
-      <div class="IG-Photos">
+      <div class="IgPhotos">
         <img src="./Assets/Images/IG_img1.svg" alt="IG Images" />
-        <img src="./Assets/Images/IG_Img2.png" alt="IG Images" />
-        <img src="./Assets/Images/IG_icon.svg" alt="Ig icon" />
+        <div>
+          <div class="igWine">
+            <img src="./Assets/Images/IG_icon.svg" alt="Ig icon" />
+          </div>
+        </div>
+
         <img src="./Assets/Images/IG_Img3.svg" alt="IG Images" />
         <img src="./Assets/Images/IG_Img4.svg" alt="IG Images" />
       </div>
     </div>
 
-    <main>
-      <!-- Contact Us Section -->
-      <div class="contact-section">
+    <!-- Contact Us Section -->
+    <div class="contactSection">
+      <div class="contactCont">
         <div>
           <h5>Contact</h5>
           <img
@@ -375,71 +381,83 @@
             src="./Assets/Images/spoon_right.svg"
             alt="spoon right"
           />
-
-          <h3>Find Us</h3>
-          <p>Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
-
-          <div>
-            <h5>Opening Hours</h5>
-            <p>Mon - Fri: 10:00 am - 08:00 pm</p>
-            <p>Sat - Sun: 11:00 am - 11:00 pm</p>
-          </div>
-
-          <button>Visit Us</button>
-
-          <img src="./Assets/Images/Contact_Img.png" alt="contact image" />
         </div>
+
+        <h3>Find Us</h3>
+        <p>Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
+
+        <div class="time">
+          <h5>Opening Hours</h5>
+          <p>Mon - Fri: 10:00 am - 08:00 pm</p>
+          <p>Sat - Sun: 11:00 am - 11:00 pm</p>
+        </div>
+        <button>Visit Us</button>
       </div>
-    </main>
+      <div class="contactImg">
+        <div class="conTop"></div>
+        <div class="conBottom"></div>
+        <img src="./Assets/Images/Contact_Img.png" alt="contact image" />
+      </div>
+    </div>
 
     <!-- Footer Section  -->
 
     <footer>
       <!-- Newsletter -->
-      <div class="newsletter">
-        <h5>Newsletter</h5>
-        <img
-          class="right-spoon"
-          src="./Assets/Images/spoon_right.svg"
-          alt="spoon right"
-        />
+      <div class="newsCont">
+        <div class="newsletter">
+          <div>
+            <h5>Newsletter</h5>
+            <img
+              class="right-spoon"
+              src="./Assets/Images/spoon_right.svg"
+              alt="spoon right"
+            />
+          </div>
 
-        <h3>Subscribe To Our Newsletter</h3>
-        <p>...and never miss latest updates</p>
+          <h3>Subscribe To Our Newsletter</h3>
+          <p>...and never miss latest updates</p>
+        </div>
+
+        <form>
+          <input type="text" placeholder="Email Address" />
+          <button>Subscribe</button>
+        </form>
       </div>
 
-      <form action="">
-        <input type="text" placeholder="Email Address" />
-        <button>Subscribe</button>
-      </form>
-
       <!-- Whole Footer and Socials -->
-      <div class="footer-cont">
-        <div class="f-top">
+      <div class="footerCont">
+        <div class="fTop">
           <!-- contact numbers -->
-          <div>
-            <h4>Contact Us</h4>
-            <p>9 W 53rd St, New York, NY 10019, USA</p>
-            <p>
-              +1 212-344-1230 <br />
-              +1 212-555-1230
-            </p>
+          <div class="fContact">
+            <div>
+              <h4>Contact Us</h4>
+            </div>
+            <div class="fPara">
+              <p>9 W 53rd St, New York, NY 10019, USA</p>
+              <p>
+                +1 212-344-1230 <br />
+                +1 212-555-1230
+              </p>
+            </div>
           </div>
 
           <!-- socials -->
-          <div>
+          <div class="socPara">
             <img src="./Assets/Images/Gerícht_gold.svg" alt="gericht logo" />
-            <div>
-              <p>
-                "The best way to find yourself is to lose yourself in the
-                service of others.”
-              </p>
-              <img
-                class="right-spoon"
-                src="./Assets/Images/spoon_right.svg"
-                alt="spoon right"
-              />
+            <div class="soDesc">
               <div>
+                <p>
+                  "The best way to find yourself is to lose yourself in the
+                  service of others.”
+                </p>
+                <img
+                  class="spoon"
+                  src="./Assets/Images/spoon_right.svg"
+                  alt="spoon right"
+                />
+              </div>
+              <div class="socialMedia">
                 <img
                   src="./Assets/Images/u_facebook-f(1).svg"
                   alt="facebook"
@@ -455,21 +473,25 @@
           </div>
 
           <!-- working hours -->
-          <div class="working-hours">
-            <h4>Working Hours</h4>
-            <p>
-              Monday-Friday: <br />
-              08:00 am -12:00 am
-            </p>
-            <p>
-              Saturday-Sunday: <br />
-              07:00am -11:00 pm
-            </p>
+          <div class="fContact">
+            <div>
+              <h4>Working Hours</h4>
+            </div>
+            <div class="fPara">
+              <p>
+                Monday-Friday: <br />
+                08:00 am -12:00 am
+              </p>
+              <p>
+                Saturday-Sunday: <br />
+                07:00am -11:00 pm
+              </p>
+            </div>
           </div>
         </div>
 
         <!-- for bottom -->
-        <div class="F-Bottom">
+        <div class="fBottom">
           <p>2022 Gerícht. @Oregon Agency. All Rights reserved.</p>
         </div>
       </div>

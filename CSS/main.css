@@ -334,8 +334,8 @@ nav ul li a {
 /* Restaurant Video */
 .resVid {
   height: 600px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../Assets/Images/res.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Assets/Images/Play\ BK_Img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -410,6 +410,284 @@ nav ul li a {
 
 /* Instagram Image Section */
 .social {
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
   height: 500px;
+  gap: 40px;
+  padding-left: 50px;
   background-color: black;
+}
+
+.igWriteup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.igWriteup h5 {
+  font-size: 1.5rem;
+}
+
+.igWriteup h3 {
+  font-size: 3rem;
+  color: #dcca87;
+}
+.igWriteup p {
+  width: 400px;
+  font-size: 0.8rem;
+  color: #aaa;
+  font-family: "Poppins", sans-serif;
+}
+.igWriteup button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #dcca87;
+}
+
+.IgPhotos {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+}
+.IgPhotos::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.IgPhotos::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  visibility: hidden;
+}
+
+.IgPhotos img {
+  width: 300px;
+  object-fit: cover;
+  height: 380px;
+}
+
+.igWine {
+  width: 290px;
+  height: 380px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../Assets/Images/IG_Img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.igWine img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Contact us Section */
+.contactSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  height: 100vh;
+  padding: 80px 230px;
+  background-color: black;
+}
+.contactCont {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contactCont h5 {
+  font-size: 1.2rem;
+}
+
+.contactCont h3 {
+  font-size: 3.5rem;
+  color: #dcca87;
+}
+
+.contactCont p {
+  font-size: 0.8rem;
+  color: #aaa;
+  font-family: "Poppins", sans-serif;
+}
+.contactCont button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #dcca87;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.time h5 {
+  color: #dcca87;
+}
+.contactImg {
+  width: 450px;
+  height: 550px;
+  position: relative;
+}
+.contactImg img {
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  top: -10px;
+  object-fit: cover;
+}
+.conTop {
+  background-color: #dcca87;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: -30px;
+  right: -20px;
+}
+.conBottom {
+  background-color: #dcca87;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: -20px;
+  bottom: -10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  gap: 30px;
+  height: 600px;
+  background: url("../Assets/Images/Background_Img.png");
+}
+.newsCont {
+  height: 270px;
+  width: 1000px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 40px;
+  border: 1px solid #6e6645;
+  border-top: none;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.newsletter h5 {
+  font-size: 1.5rem;
+}
+.newsletter h3 {
+  font-size: 3rem;
+  color: #dcca87;
+}
+
+.newsletter p {
+  font-size: 0.8rem;
+  color: #aaa;
+  font-family: "Poppins", sans-serif;
+}
+/* For form */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+form input {
+  padding-left: 20px;
+  background: transparent;
+  width: 400px;
+  height: 40px;
+  border: 1px solid #6e6645;
+  color: #dcca87;
+}
+form input::placeholder {
+  color: #dcca87;
+}
+
+form button {
+  width: 100px;
+  padding: 6px;
+  border: none;
+  outline: none;
+  background-color: #dcca87;
+}
+/* Whole Footer and Socials */
+.footerCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.fTop {
+  display: flex;
+}
+.fContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 400px;
+  height: max-content;
+}
+.fContact h4 {
+  font-size: 1.5rem;
+  color: #aaa;
+}
+.fPara {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.socPara {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.soDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.soDesc p {
+  font-size: 1rem;
+  color: #aaa;
+}
+.socPara .spoon {
+  width: 30px;
+}
+.socPara img {
+  width: 200px;
+}
+.socialMedia img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.fBottom p {
+  font-size: 1rem;
+  color: #aaa;
 }
